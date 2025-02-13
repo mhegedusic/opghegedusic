@@ -1,12 +1,21 @@
 import React from 'react';
 
 function Home() {
+
+  window.addEventListener('load', function() {
+    // Provjera je li animacija već izvedena (ako nije, dodajemo podatke u cache)
+    if (!localStorage.getItem('animationDone')) {
+        // Dodaj animaciju na 'home-page' i 'navbarBg' elemente
+        document.querySelector('.home-page').classList.add('animate');
+        document.querySelector('.navbarBg').classList.add('animate');
+        
+        // Označi da je animacija izvedena u cacheu
+        localStorage.setItem('animationDone', 'true');
+    }
+});
+
   return (
     <>
-    <div className='firstScreen'>
-    <img src="https://i.ibb.co/5x85f8pj/vjeverica.jpg" alt="vjeverica" border="0" className='vjeverica' />
-    <h1 className='headingOnFirstScreen'>Dobrodošli na stranicu <br/>OPG Hegedušić</h1>
-    </div>
     <div className="home-page">
           <img src="https://i.ibb.co/Fk2SYZBy/ljesnjak.jpg" alt="ljesnjak" border="0" className='bannerImg'/>
           <h2>

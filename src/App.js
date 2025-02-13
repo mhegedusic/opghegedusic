@@ -12,6 +12,10 @@ import Contact from './pages/contact';
 function App() {
   return (
     <div className='bodyBackground'>
+      <div className='firstScreen'>
+    <img src="https://i.ibb.co/5x85f8pj/vjeverica.jpg" alt="vjeverica" border="0" className='vjeverica' />
+    <h1 className='headingOnFirstScreen'>Dobrodošli na stranicu <br/>OPG Hegedušić</h1>
+    </div>
     <Router>
       <Navigation/>
       <div className="container mt-4">

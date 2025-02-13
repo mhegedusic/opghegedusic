@@ -117,8 +117,7 @@
   }
 }
 
-.home-page{
-  opacity: 0;
+.home-page.animate {
   animation: fadeIn 2s both 3s;
 }
 
