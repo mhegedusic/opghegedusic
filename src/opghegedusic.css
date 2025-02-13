@@ -38,9 +38,9 @@
         width: 375px;
         margin-left: 5%;
       }
-      @media (max-width: 415px) {
+      @media (max-width: 400px) {
         width: 350px;
-        margin-left: 5%;
+        margin-left: 2%;
       }
       @media (max-width: 383px) {
         width: 320px;
@@ -95,9 +95,9 @@
     width: 375px;
     margin-left: 5%;
   }
-  @media (max-width: 415px) {
+  @media (max-width: 400px) {
     width: 350px;
-    margin-left: 5%;
+    margin-left: 0%;
   }
   @media (max-width: 383px) {
     width: 320px;
