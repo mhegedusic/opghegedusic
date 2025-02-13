@@ -1,18 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../opghegedusic.css';
+import { useLocation } from 'react-router-dom';
 
 function Home() {
   const [isAnimated, setIsAnimated] = useState(false);
+  const [showContent, setShowContent] = useState(false);
+  const location = useLocation();
+  const firstLoad = useRef(true); // Ref za praćenje prvog učitavanja
 
-  // Provjera je li animacija već bila izvršena
-  useEffect ( () => {
-    console.log("useEffect pokrenut");
-    
-      setIsAnimated(true); // Pokreni animaciju prilikom prvog učitavanja stranice
-  }, []);
+  useEffect(() => {
+    // Provjera je li stranica prvi put učitana ili je došlo do refresh-a
+    if (firstLoad.current) {
+      // Ako je stranica prvi put učitana ili osvježena
+      setIsAnimated(true); // Pokrećemo animaciju
+      firstLoad.current = false; // Nakon prvog učitavanja, postavljamo na false
+    } else {
+      setShowContent(true); // Ako je već bila učitana, odmah prikazujemo sadržaj
+    }
+  }, [location]); // Praćenje promjena URL-a pomoću useLocation hooka
+
   return (
     <>
-    <div className={`home-page ${isAnimated ? 'fadeIn' : ''}`}>
+    <div className={`home-page ${isAnimated ? 'fadeIn' : ''}`} style={{ opacity: showContent || isAnimated ? 1 : 0 }}>
           <img src="https://i.ibb.co/Fk2SYZBy/ljesnjak.jpg" alt="ljesnjak" border="0" className='bannerImg'/>
           <h2>
     <strong>OPG Hegedušić </strong> <br/>
