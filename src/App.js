@@ -7,22 +7,25 @@ import Home from './pages/home';
 import About from './pages/about';
 import Gallery from './pages/gallery';
 import Footer from './footer';
+import Contact from './pages/contact';
 
 function App() {
   return (
     <div className='bodyBackground'>
     <Router>
-      <Navigation />
+      <Navigation/>
       <div className="container mt-4">
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
-          <Route path="/contact" element={<Gallery/>} />
+          <Route path="/gallery" element={<Gallery/>} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
-      </div>
+      </div> 
       <Footer/>
     </Router>
     </div>
+
   );
 }
 

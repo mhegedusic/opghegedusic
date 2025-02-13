@@ -7,6 +7,10 @@
     font-weight: bold;
 }
 
+.navbarBg{
+  animation: fadeIn 2s both 3s ease-in-out;
+}
+
 .bannerImg{
     margin-bottom: 30px;
     border-radius: 10px;
@@ -62,4 +66,129 @@
     color: wheat;
 }
 
+.vjeverica{
+  animation: fadeOut 2s both 2s ease-in-out;
+  @media (max-width: 1300px) {
+    width: 1100px;
+  }
+  @media (max-width: 1200px) {
+    width: 1000px;
+  }
+  @media (max-width: 1100px) {
+    width: 900px;
+  }
+  @media (max-width: 990px) {
+    width: 700px;
+  }
+  @media (max-width: 766px) {
+    width: 500px;
+    height: 700px;
+  }
+  @media (max-width: 520px) {
+    width: 450px;
+    height: 700px;
+    margin-left: 5%;
+  }
+  @media (max-width: 360px) {
+    width: 300px;
+    height: 700px;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
+.home-page{
+  opacity: 0;
+  animation: fadeIn 2s both 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.headingOnFirstScreen{
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+
+.firstScreen{
+  animation: fadeOut 2s both 2s;
+  margin: 0;
+  margin-top: 20%;
+  position: absolute;
+  top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+
+.contactForm{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: -15px 15px 50px 20px #464646;
+  margin-top: 50px;
+  color: #ffffff;
+  background-position: -110px;
+  margin-bottom: 10%;
+  @media (max-width: 530px) {
+    max-width: 300px;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: -45px;
+  }
+}
+
+.contactForm label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  @media (max-width: 530px) {
+    margin-bottom: 0px;
+    border: 0px;
+    padding: 5px;
+  }
+}
+
+.contactForm button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: rgba(18, 75, 18, 0.8);
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  @media (max-width: 530px) {
+    margin-top: 20px;
+  }
+}
+
+.contactForm button:hover {
+  background-color: #000000;
+}

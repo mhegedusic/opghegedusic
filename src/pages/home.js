@@ -2,7 +2,11 @@ import React from 'react';
 
 function Home() {
   return (
-    
+    <>
+    <div className='firstScreen'>
+    <img src="https://i.ibb.co/5x85f8pj/vjeverica.jpg" alt="vjeverica" border="0" className='vjeverica' />
+    <h1 className='headingOnFirstScreen'>Dobrodošli na stranicu <br/>OPG Hegedušić</h1>
+    </div>
     <div className="home-page">
           <img src="https://i.ibb.co/Fk2SYZBy/ljesnjak.jpg" alt="ljesnjak" border="0" className='bannerImg'/>
           <h2>
@@ -40,6 +44,8 @@ Naša misija je obogatiti tržište najboljim lješnjacima, koji nisu samo ukusn
 </p> 
         
     </div>
+    
+    </>
   );
 };
 
