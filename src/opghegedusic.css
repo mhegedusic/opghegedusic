@@ -87,9 +87,9 @@
     width: 500px;
     height: 700px;
   }
-  @media (max-width: 510px) {
-    width: 450px;
-    margin-left: 5%;
+  @media (max-width: 500px) {
+    width: 400px;
+    margin-left: 0%;
   }
   @media (max-width: 460px) {
     width: 375px;
