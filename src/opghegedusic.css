@@ -30,8 +30,8 @@
       @media (max-width: 766px) {
         width: 500px;
       }
-      @media (max-width: 510px) {
-        width: 450px;
+      @media (max-width: 530px) {
+        width: 475px;
         margin-left: 2%;
       }
       @media (max-width: 470px) {
@@ -87,7 +87,7 @@
     width: 500px;
     height: 700px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 530px) {
     width: 400px;
     margin-left: 0%;
   }
