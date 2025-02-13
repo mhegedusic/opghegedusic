@@ -12,7 +12,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.29.0",
     "react-scripts": "5.0.1",
-    "homepage": "https://mhegedusic.github.io"
+    "homepage": "https://mhegedusic.github.io/opghegedusic"
   },
   "scripts": {
     "start": "react-scripts start",
