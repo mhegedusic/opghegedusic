@@ -32,9 +32,9 @@
       }
       @media (max-width: 510px) {
         width: 450px;
-        margin-left: 5%;
+        margin-left: 2%;
       }
-      @media (max-width: 460px) {
+      @media (max-width: 470px) {
         width: 375px;
         margin-left: 5%;
       }
