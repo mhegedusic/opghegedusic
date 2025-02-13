@@ -2,6 +2,7 @@
   "name": "opghegedusic",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mhegedusic.github.io",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "bootstrap": "^5.3.3",
@@ -11,8 +12,7 @@
     "react-dom": "^19.0.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.29.0",
-    "react-scripts": "5.0.1",
-    "homepage": "https://mhegedusic.github.io"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
