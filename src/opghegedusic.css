@@ -42,7 +42,7 @@
         width: 350px;
         margin-left: 5%;
       }
-      @media (max-width: 380px) {
+      @media (max-width: 383px) {
         width: 320px;
         margin-left: 5%;
       }
@@ -99,7 +99,7 @@
     width: 350px;
     margin-left: 5%;
   }
-  @media (max-width: 380px) {
+  @media (max-width: 383px) {
     width: 320px;
     margin-left: 0%;
   }
