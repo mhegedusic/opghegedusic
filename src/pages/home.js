@@ -1,22 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import '../opghegedusic.css';
 
 function Home() {
+  const [isAnimated, setIsAnimated] = useState(false);
 
-  window.addEventListener('load', function() {
-    // Provjera je li animacija već izvedena (ako nije, dodajemo podatke u cache)
-    if (!localStorage.getItem('animationDone')) {
-        // Dodaj animaciju na 'home-page' i 'navbarBg' elemente
-        document.querySelector('.home-page').classList.add('animate');
-        document.querySelector('.navbarBg').classList.add('animate');
-        
-        // Označi da je animacija izvedena u cacheu
-        localStorage.setItem('animationDone', 'true');
-    }
-});
-
+  // Provjera je li animacija već bila izvršena
+  useEffect ( () => {
+    console.log("useEffect pokrenut");
+    
+      setIsAnimated(true); // Pokreni animaciju prilikom prvog učitavanja stranice
+  }, []);
   return (
     <>
-    <div className="home-page">
+    <div className={`home-page ${isAnimated ? 'fadeIn' : ''}`}>
           <img src="https://i.ibb.co/Fk2SYZBy/ljesnjak.jpg" alt="ljesnjak" border="0" className='bannerImg'/>
           <h2>
     <strong>OPG Hegedušić </strong> <br/>

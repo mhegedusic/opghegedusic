@@ -117,17 +117,13 @@
   }
 }
 
-.home-page.animate {
-  animation: fadeIn 2s both 3s;
+.home-page {
+  opacity: 0;
+  transition: opacity 2s ease-in-out 3s;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.home-page.fadeIn {
+  opacity: 1;
 }
 
 .headingOnFirstScreen{

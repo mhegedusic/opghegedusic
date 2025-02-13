@@ -10,6 +10,7 @@ import Footer from './footer';
 import Contact from './pages/contact';
 
 function App() {
+  
   return (
     <div className='bodyBackground'>
       <div className='firstScreen'>
