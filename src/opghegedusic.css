@@ -108,22 +108,30 @@
     margin-left: 10%;
   }
 }
-@keyframes fadeOut {
+@keyframes fadeIn {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
 .home-page {
-  opacity: 0;
-  transition: opacity 2s ease-in-out 3s;
+  animation: fadeIn 2s both 2s;
 }
 
-.home-page.fadeIn {
-  opacity: 1;
+
+
+/* Animacija za nestajanje početnog ekrana */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden; /* Sakriva element nakon animacije */
+  }
 }
 
 .headingOnFirstScreen{
