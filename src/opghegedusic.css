@@ -89,6 +89,7 @@
   }
   @media (max-width: 530px) {
     width: 400px;
+    height: 500px;
     margin-left: 0%;
   }
   @media (max-width: 460px) {
