@@ -28,7 +28,7 @@ Zašto odabrati nas?
 <br/>
 Prirodni uzgoj – Naši lješnjaci rastu u zdravom, kontroliranom okruženju, daleko od pesticida i kemikalija.
 Obiteljska tradicija – Posvećeni smo očuvanju obiteljske tradicije i kvalitetnog poljoprivrednog rada.
-Svježina i kvaliteta – Svaki lješnjak koji dođe do vas, prošao je rigoroznu kontrolu kvalitete kako bi osigurao najbolje plodove na tržištu.
+Svježina i kvaliteta – Svaki lješnjak koji dođe do vas, prošao je kontrolu kvalitete kako bi osigurao najbolje plodove na tržištu.
 Održivo gospodarstvo – Sposobni smo proizvoditi na način koji čuva okoliš i pridaje važnost očuvanju prirodnih resursa.
 </p>
 <h4>
